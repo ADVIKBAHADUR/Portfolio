@@ -3,51 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advik Bahadur - CV</title>
+    <title>Advik Bahadur - Journey</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Advik Bahadur</h1>
-            <div class="contact-info">
-                <a href="mailto:advikbahadur@gmail.com">advikbahadur@gmail.com</a>
-                <span>|</span>
-                <a href="tel:+353892325102">+353 (0) 89 232 5102</a>
-                <span>|</span>
-                <a href="https://www.linkedin.com/in/advik-bahadur/" target="_blank">LinkedIn</a>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Journey</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="hero-title">Advik Bahadur</h1>
+        <p class="hero-subtitle">View my journey</p>
+        <div class="scroll-indicator">
+            <svg width="30" height="50" viewBox="0 0 30 50">
+                <path d="M15 5 L15 35 M15 35 L10 30 M15 35 L20 30" stroke="white" stroke-width="2" fill="none"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Timeline Chapters -->
+    <section class="timeline">
+        <!-- Chapter 1: Academic Achievements -->
+        <div class="chapter">
+            <div class="chapter-header">
+                <h2>Chapter 1: Academic Achievements</h2>
+                <button class="expand-btn">+</button>
             </div>
-        </header>
-
-        <section class="summary">
-            <p>Electronic & Computer Engineering student at Trinity College Dublin with expertise in embedded systems, FPGA development, and AI/ML applications. Passionate about hardware design, signal processing, and developing innovative engineering solutions.</p>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <div class="entry">
-                <div class="entry-header">
-                    <h3>Trinity College Dublin</h3>
-                    <span class="date">2022 - 2026</span>
+            <div class="chapter-content">
+                <div class="work-section">
+                    <h3>What I Did</h3>
+                    <ul>
+                        <li><strong>Trinity College Dublin</strong> (2022 - 2026) - B.A. (Mod) Electronic & Computer Engineering, First Class Honours</li>
+                        <li><strong>Laidlaw Leadership Scholar</strong> - Selected for prestigious leadership development program</li>
+                        <li><strong>Academic Excellence</strong> - Consistent high performance across hardware design, signal processing, and AI/ML modules</li>
+                    </ul>
                 </div>
-                <p class="subtitle">B.A. (Mod) Electronic & Computer Engineering</p>
-                <ul>
-                    <li>First Class Honours</li>
-                    <li>Laidlaw Leadership Scholar</li>
-                </ul>
+                <div class="genuine-section">
+                    <h3>Genuine Reflections</h3>
+                    <p>University wasn't just about grades for me—it was where I discovered my passion for bridging hardware and software. Every late night debugging FPGA code taught me resilience. The Laidlaw scholarship showed me that technical skills mean little without the ability to lead and inspire others.</p>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section>
-            <h2>Experience</h2>
-            
-            <div class="entry">
-                <div class="entry-header">
-                    <h3>Formula Trinity Racing</h3>
-                    <span class="date">2023 - Present</span>
+        <!-- Chapter 2: Skills in Practice -->
+        <div class="chapter">
+            <div class="chapter-header">
+                <h2>Chapter 2: Skills in Practice</h2>
+                <button class="expand-btn">+</button>
+            </div>
+            <div class="chapter-content">
+                <div class="work-section">
+                    <h3>What I Did</h3>
+                    <ul>
+                        <li><strong>FPGA Development</strong> - Designed and implemented complex digital systems using Verilog/VHDL</li>
+                        <li><strong>Embedded Systems</strong> - Built real-time systems with STM32, ESP32, and custom hardware</li>
+                        <li><strong>AI/ML Engineering</strong> - Developed computer vision models and trained custom LLMs</li>
+                        <li><strong>Signal Processing</strong> - Advanced DSP implementation for audio and sensor data</li>
+                    </ul>
                 </div>
-                <p class="subtitle">Electronics Team Lead</p>
-                <ul>
+                <div class="genuine-section">
+                    <h3>Genuine Reflections</h3>
+                    <p>Each technology I learned was like adding a new tool to my toolbox. But the real skill was knowing when to use which tool. I learned that elegant solutions often come from understanding constraints deeply, not from using the fanciest tech.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 3: Leading -->
+        <div class="chapter">
+            <div class="chapter-header">
+                <h2>Chapter 3: Leading</h2>
+                <button class="expand-btn">+</button>
+            </div>
+            <div class="chapter-content">
+                <div class="work-section">
+                    <h3>What I Did</h3>
+                    <ul>
+                        <li><strong>Formula Trinity Racing - Electronics Team Lead</strong> (2023 - Present) - Leading a team designing custom PCBs and telemetry systems for Formula Student car</li>
+                        <li><strong>Team Mentorship</strong> - Mentored junior engineers in FPGA development and embedded systems</li>
+                        <li><strong>Project Coordination</strong> - Managed cross-functional collaboration between electronics, mechanical, and software teams</li>
+                    </ul>
+                </div>
+                <div class="genuine-section">
+                    <h3>Genuine Reflections</h3>
+                    <p>Leading taught me that great ideas mean nothing if you can't bring people along with you. I learned to listen more than I speak, to celebrate small wins, and that the best leaders make themselves obsolete by empowering others.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 4: Professional -->
+        <div class="chapter">
+            <div class="chapter-header">
+                <h2>Chapter 4: Professional</h2>
+                <button class="expand-btn">+</button>
+            </div>
+            <div class="chapter-content">
+                <div class="work-section">
+                    <h3>What I Did</h3>
+                    <ul>
+                        <li><strong>Research Experience</strong> - Conducted adaptive network systems research, contributing to cutting-edge networking solutions</li>
+                        <li><strong>Industry Collaboration</strong> - Worked on real-world projects bridging academic research and practical implementation</li>
+                        <li><strong>Technical Communication</strong> - Presented complex technical concepts to diverse audiences</li>
+                    </ul>
+                </div>
+                <div class="genuine-section">
+                    <h3>Genuine Reflections</h3>
+                    <p>The professional world showed me that impact matters more than perfection. I learned to ship working solutions, iterate based on feedback, and that sometimes "good enough" is actually better than perfect if it arrives on time.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 5: Independent -->
+        <div class="chapter">
+            <div class="chapter-header">
+                <h2>Chapter 5: Independent</h2>
+                <button class="expand-btn">+</button>
+            </div>
+            <div class="chapter-content">
+                <div class="work-section">
+                    <h3>What I Did</h3>
+                    <ul>
+                        <li><strong>Self-Built Drone</strong> - Designed and constructed a custom drone from scratch with a friend, handling everything from flight controller programming to mechanical assembly</li>
+                        <li><strong>Personal Projects</strong> - Constantly building side projects to explore new technologies and challenge myself</li>
+                        <li><strong>Continuous Learning</strong> - Self-taught in areas beyond curriculum, from computer vision to game development</li>
+                    </ul>
+                </div>
+                <div class="genuine-section">
+                    <h3>Genuine Reflections</h3>
+                    <p>My independent projects are where I truly grow. There's no syllabus, no deadline except my own curiosity. Building that drone taught me more about systems thinking than any textbook could. These projects keep me grounded—they remind me why I fell in love with engineering in the first place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
                     <li>Leading electronics design for Formula Student race car</li>
                     <li>Developed custom PCB designs and embedded systems</li>
                     <li>Managed team of engineers in hardware development</li>
