@@ -121,8 +121,8 @@ body {
 }
 
 .profile-picture {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--border);
@@ -245,7 +245,8 @@ body {
 }
 
 .chapter.active .chapter-content {
-    max-height: 2000px;
+    max-height: none;
+    overflow: visible;
 }
 
 .work-section,
@@ -273,6 +274,19 @@ body {
     line-height: 1.8;
     margin-bottom: 1.2rem;
     font-size: 0.95rem;
+}
+
+.work-section a,
+.genuine-section a {
+    color: var(--text-primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.3s ease;
+}
+
+.work-section a:hover,
+.genuine-section a:hover {
+    border-bottom-color: var(--text-primary);
 }
 
 .genuine-section p {
@@ -586,6 +600,11 @@ body {
         font-size: 1.2rem;
     }
 
+    .chapter.active .chapter-content {
+        overflow: visible;
+        max-height: none;
+    }
+
     .work-section,
     .genuine-section {
         padding: 0 1.5rem 1.5rem 1.5rem;
@@ -608,10 +627,13 @@ body {
     .side-panel {
         right: -100%;
         width: 100%;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .panel-content {
         padding: 3rem 2rem;
+        padding-bottom: 4rem;
     }
 }
 
@@ -626,8 +648,6 @@ body {
 
     .project-bubble {
         padding: 2rem;
-    }
-}
     }
 }
 
