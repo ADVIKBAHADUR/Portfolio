@@ -45,55 +45,80 @@
 
     <!-- Project Grid -->
     <section class="project-grid">
-        <div class="project-bubble" data-category="research">
+        <div class="project-bubble" data-project="superresolution">
             <div class="bubble-content">
-                <h3>Adaptive Network Systems</h3>
-                <p class="project-type">Research</p>
-                <p class="project-desc">Developing intelligent networking solutions that adapt to changing conditions in real-time</p>
+                <h3>FPGA Super-Resolution CNN</h3>
+                <p class="project-type">Hardware • FPGA • Computer Vision</p>
+                <p class="project-desc">Real-time image super-resolution on ULX3S FPGA with custom neural network acceleration</p>
             </div>
         </div>
 
-        <div class="project-bubble" data-category="game">
-            <div class="bubble-content">
-                <h3>F1 Racing Game</h3>
-                <p class="project-type">Game Development</p>
-                <p class="project-desc">Built a Formula 1 simulation game with realistic physics and graphics</p>
-            </div>
-        </div>
-
-        <div class="project-bubble" data-category="ai">
-            <div class="bubble-content">
-                <h3>LLM Training Pipeline</h3>
-                <p class="project-type">AI/ML</p>
-                <p class="project-desc">Custom training pipeline for large language models with optimization techniques</p>
-            </div>
-        </div>
-
-        <div class="project-bubble" data-category="tools">
-            <div class="bubble-content">
-                <h3>Personal Study Manager</h3>
-                <p class="project-type">Productivity Tool</p>
-                <p class="project-desc">Simple, elegant study tracking application to manage learning goals and progress</p>
-            </div>
-        </div>
-
-        <div class="project-bubble" data-category="cv">
+        <div class="project-bubble" data-project="pedestrian">
             <div class="bubble-content">
                 <h3>Pedestrian Crossing Detector</h3>
-                <p class="project-type">Computer Vision</p>
-                <p class="project-desc">Traditional CV approach using edge detection and pattern recognition for safety applications</p>
+                <p class="project-type">Computer Vision • C++</p>
+                <p class="project-desc">Traditional CV approach using edge detection, RANSAC, and morphological operations</p>
             </div>
         </div>
 
-        <div class="project-bubble" data-category="hardware">
+        <div class="project-bubble" data-project="f1game">
             <div class="bubble-content">
-                <h3>2D Convolution Core</h3>
-                <p class="project-type">FPGA Design</p>
-                <p class="project-desc">Efficient hardware implementation on ULX3S FPGA for real-time image processing</p>
+                <h3>F1 Game Time</h3>
+                <p class="project-type">Python • Game • Web Scraping</p>
+                <p class="project-desc">Lights Out & Laugh Out - A race prediction game with live data from f1-dash.com</p>
             </div>
         </div>
 
-        <div class="project-bubble" data-category="ai">
+        <div class="project-bubble" data-project="consensus">
+            <div class="bubble-content">
+                <h3>Distributed Consensus Protocol</h3>
+                <p class="project-type">Distributed Systems • Python</p>
+                <p class="project-desc">Implementation of consensus algorithms for distributed networked systems</p>
+            </div>
+        </div>
+
+        <div class="project-bubble" data-project="studysync">
+            <div class="bubble-content">
+                <h3>StudySync</h3>
+                <p class="project-type">Productivity • Web App</p>
+                <p class="project-desc">Semester task dashboard with Google Sheets integration and Gantt chart visualisation</p>
+            </div>
+        </div>
+
+        <div class="project-bubble" data-project="drone">
+            <div class="bubble-content">
+                <h3>Arduino Drone</h3>
+                <p class="project-type">Embedded Systems • Hardware</p>
+                <p class="project-desc">Custom-built quadcopter with RF communication and MultiWii flight controller</p>
+            </div>
+        </div>
+
+        <div class="project-bubble" data-project="adaptive">
+            <div class="bubble-content">
+                <h3>Adaptive Network Systems</h3>
+                <p class="project-type">Research • Complex Systems</p>
+                <p class="project-desc">Laidlaw research on controlling complex networks with minimal adaptive nodes</p>
+            </div>
+        </div>
+
+        <div class="project-bubble" data-project="srmodel">
+            <div class="bubble-content">
+                <h3>Efficient Super-Resolution Model</h3>
+                <p class="project-type">Machine Learning • Python</p>
+                <p class="project-desc">Teacher-student distillation for efficient deep learning super-resolution</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Side Panel -->
+    <div id="sidePanel" class="side-panel">
+        <button class="close-btn" onclick="closeSidePanel()">&times;</button>
+        <div id="panelContent" class="panel-content">
+            <!-- Content will be loaded dynamically -->
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
             <div class="bubble-content">
                 <h3>Super-Resolution Model</h3>
                 <p class="project-type">AI/ML Research</p>

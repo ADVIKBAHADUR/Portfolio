@@ -407,6 +407,7 @@ body {
     transform: translateY(-5px);
     border-color: rgba(255, 255, 255, 0.3);
     background-color: rgba(30, 30, 30, 0.8);
+    cursor: pointer;
 }
 
 .bubble-content h3 {
@@ -428,6 +429,128 @@ body {
     color: var(--text-secondary);
     line-height: 1.6;
     font-size: 0.95rem;
+}
+
+/* Side Panel */
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -600px;
+    width: 600px;
+    height: 100vh;
+    background-color: var(--bg-secondary);
+    border-left: 1px solid var(--border);
+    z-index: 2000;
+    overflow-y: auto;
+    transition: right 0.4s ease;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.side-panel.active {
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close-btn:hover {
+    transform: rotate(90deg);
+    color: var(--text-secondary);
+}
+
+.panel-content {
+    padding: 4rem 3rem;
+    padding-top: 5rem;
+}
+
+.panel-content h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+.panel-type {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.github-link:hover {
+    border-color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.panel-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.panel-section h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.panel-section p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.detail-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.detail-list li {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.75rem;
+}
+
+.detail-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--text-primary);
 }
 
 /* Responsive Design */
@@ -469,6 +592,15 @@ body {
     .main-nav {
         gap: 1.5rem;
         padding: 1.5rem;
+    }
+
+    .side-panel {
+        right: -100%;
+        width: 100%;
+    }
+
+    .panel-content {
+        padding: 3rem 2rem;
     }
 }
 
