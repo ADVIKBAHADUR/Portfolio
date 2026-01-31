@@ -226,28 +226,15 @@ body {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--text-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-weight: 500;
 }
 
-.chapter-content ul {
-    list-style: none;
-    margin-left: 0;
-}
-
-.chapter-content li {
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-    position: relative;
+.work-section p {
     color: var(--text-primary);
-    line-height: 1.7;
-}
-
-.chapter-content li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
 }
 
 .genuine-section p {
