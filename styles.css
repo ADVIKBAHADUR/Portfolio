@@ -21,8 +21,26 @@ body {
     overflow-x: hidden;
 }
 
+/* Development Notice */
+.dev-notice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--border);
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.05em;
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+}
+
 /* Navigation */
 .main-nav {
+    top: 2.5rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -72,6 +90,7 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
+    padding-top: 2.5rem;
 }
 
 .hero-title {
@@ -125,6 +144,7 @@ body {
 .timeline {
     max-width: 900px;
     margin: 0 auto;
+    margin-top: 2.5rem;
     padding: 4rem 2rem;
 }
 
@@ -236,6 +256,56 @@ body {
     font-style: italic;
 }
 
+/* References Section */
+.references {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.references-content {
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+}
+
+.references-content h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.references-content ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.references-content li {
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+
+.references-content li::before {
+    display: none;
+}
+
+.references-content a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+}
+
+.references-content a:hover {
+    color: var(--text-primary);
+    border-bottom-color: var(--text-primary);
+}
+
 /* Portfolio Page */
 .portfolio-header {
     height: 40vh;
@@ -243,7 +313,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: 7.center;
     margin-top: 5rem;
 }
 
