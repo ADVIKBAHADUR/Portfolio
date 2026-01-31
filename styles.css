@@ -466,7 +466,8 @@ body {
     background-color: var(--bg-secondary);
     border-left: 1px solid var(--border);
     z-index: 2000;
-    overflow-y: auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     transition: right 0.4s ease;
     box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
 }
@@ -492,6 +493,7 @@ body {
     align-items: center;
     justify-content: center;
     transition: transform 0.2s ease, color 0.2s ease;
+    z-index: 1;
 }
 
 .close-btn:hover {
@@ -502,6 +504,9 @@ body {
 .panel-content {
     padding: 4rem 3rem;
     padding-top: 5rem;
+    padding-bottom: 4rem;
+    height: auto;
+    min-height: 100vh;
 }
 
 .panel-content h2 {
